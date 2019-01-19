@@ -11,9 +11,11 @@ fetch('lists').then(function(response){
     var lists = text.split(',');
     var i=0;
     var tags='';
+    console.log(text.constructor.name);
+    console.log(tags.constructor.name);
     while(i<lists.length){
       tag = '<div class="menu-list">'+
-      '<li><a class="'+lists[i].trim()+'" href="#!'+lists[i].trim()+'" onclick="fetchPage(\''+lists[i]+'.js\');">'+lists[i]+'</a></li>'+
+      '<li><a class="'+lists[i].trim()+'" href="#!'+lists[i].trim()+'" onclick="fetchPage(\''+lists[i]+'\');">'+lists[i]+'</a></li>'+
       '</div>';
       console.log(lists[i].trim());
       tags+=tag;
