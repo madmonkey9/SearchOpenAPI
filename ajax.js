@@ -1,7 +1,9 @@
 function fetchPage(name){
   fetch(name).then(function(response){
     response.text().then(function(text){
-      document.querySelector('.search-engine').innerHTML = text;
+      // document.querySelector('.search-engine').innerHTML = text;
+      $('.search-engine').html(text);
+      console.log('finish');
     });
   });
 }
@@ -14,10 +16,11 @@ fetch('lists').then(function(response){
     console.log(text.constructor.name);
     console.log(tags.constructor.name);
     while(i<lists.length){
-      tag = '<div class="menu-list">'+
-      '<li><a class="'+lists[i].trim()+'" href="#!'+lists[i].trim()+'" onclick="fetchPage(\''+lists[i]+'\');">'+lists[i]+'</a></li>'+
+      var listName = lists[i].trim();
+      var tag = '<div class="menu-list">'+
+      '<li><a class="'+listName+'" href="#!'+listName+'" onclick="fetchPage(\''+listName+'\');">'+listName+'</a></li>'+
       '</div>';
-      console.log(lists[i].trim());
+      console.log(listName);
       tags+=tag;
       i++;
     }
