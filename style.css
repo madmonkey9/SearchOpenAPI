@@ -11,3 +11,24 @@ h1 a{
 body{
   background-color: gray;
 }
+.search-engines{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* #googleSE{
+  background-image: url('https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif');
+  background-repeat: no-repeat;
+} */
+.googleIMG{
+  content: url('https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif');
+  width: 1fr;
+  height: 150px;
+}
+.search-engine{
+  text-align: center;
+}
+.naverIMG{
+  content: url('https://s-i.huffpost.com/gen/4374290/images/n-THE-628x314.jpg');
+  width: 1fr;
+  height: 150px;
+}

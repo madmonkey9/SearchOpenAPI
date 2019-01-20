@@ -1,5 +1,5 @@
 (function() {
-  var cx = '000621500267959341793:dmqqqa790ic';
+  var cx = googleKey.GOOGLEKEY;
   var gcse = document.createElement('script');
   gcse.type = 'text/javascript';
   gcse.async = true;

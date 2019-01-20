@@ -3,17 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>검색API</title>
-    <link rel="stylesheet" href="style.CSS">
+    <link rel="stylesheet" href="style.css">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "apiKey.js"></script>
     <script src = "searchEngine.js"></script>
-    <script src = "ajax.js"></script>
+    <!-- <script src = "ajax.js"></script> -->
   </head>
   <body>
-    <h1><a href = "./">Search Engine</a></h1>
-    <ul class="menu-lists">
-    </ul>
-    <div class="search-engine">
-      <gcse:search enableAutoComplete="true"></gcse:search>
+    <h1><a href = "./">Search Engine Open API</a></h1>
+    <div class="search-engines">
+      <div class="search-engine">
+        <img class="googleIMG">
+        <gcse:search></gcse:search>
+      </div>
+      <div class="search-engine">
+        <img class="naverIMG">
+        <gcse:search></gcse:search>
+      </div>
     </div>
   </body>
 </html>
